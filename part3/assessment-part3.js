@@ -13,7 +13,11 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
+function callBinding(magicAnimals,updateAnimal, id){
+	
+  const matchAnimals =  magicAnimals.filter(animal=> animal.id ===id)
+  return updateAnimal.call(matchAnimals[0],"Trogdor")
+}
 
 
 // *************
@@ -28,7 +32,10 @@
 // return the result of your updateAnimal invocation
 
 // CODE HERE...
-
+function applyBinding(magicAnimals,updateAnimal,id){
+  let match = magicAnimals.filter(animal => animal.id ===id)
+  return updateAnimal.apply(match[0], ['being majestic', 'eating rainbows'])
+}
 
 
 // *************

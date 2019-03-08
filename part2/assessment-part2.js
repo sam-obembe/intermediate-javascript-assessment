@@ -36,21 +36,23 @@
 
 var firstUser = 'don\'t touch this string!';
 var thirdUser = 'don\'t touch this string, either!';
-
+/*
+This kinda breaks the page
 function noWeakLink() {
 
-  // return $http({
-  //   method: 'GET',
-  //   url: '/api/users'
-  // }).then(res=> {
-  //   firstUser = res.data[0]
-  //   return res
-  // }).then(res=>{ thirdUser = res.data[2]
-  //   return res.data(9)
-  // })
+  return $http({
+    method: 'GET',
+    url: '/api/users'
+  }).then(res=> {
+    firstUser = res.data[0]
+    return res
+  }).then(()=>{ thirdUser = res.data[2]
+    return res.data(9)
+  })
   // CODE HERE...
 
 }
+*/
 
 
 
